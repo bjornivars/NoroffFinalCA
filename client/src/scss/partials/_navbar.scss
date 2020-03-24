@@ -1,0 +1,15 @@
+
+.navbar{
+    background-color: $primary-color;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.nav{
+    &-item{
+    padding-left: 1em;
+    padding-right: 1em;
+    }
+    &-a{
+        color: white;
+    }
+}

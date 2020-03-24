@@ -23,28 +23,30 @@ export default function CardSpecific() {
 
     return (
         <div>
-            <div className='row'>
-                <div className='col-sm-12'>
-                    <h1 className='heading'>Card Specific</h1>
+            <div className="container">
+                <div className='row'>
+                    <div className='col-md-12'>
+                        <h1 className='heading'>Card Specific</h1>
+                    </div>
+                    <div className='col-md-12'>
+                        {
+                            (cardResult !== undefined) ?
+                                <CardClick
+                                    name={cardResult.name}
+                                    imageUrl={cardResult.imageUrl}
+                                    colors={cardResult.colors}
+                                    rarity={cardResult.rarity}
+                                    text={cardResult.text}
+                                /> :
+                                <div className='d-flex justify-content-center col-md-6'>
+                                    <img className='w-100' src='https://flevix.com/wp-content/uploads/2019/07/Bubble-Preloader-1.gif' alt='loading' />
+                                </div>
+                        }
+                    </div>
                 </div>
-                <div className='col-sm-12'>
-                    {
-                        (cardResult !== undefined) ?
-                            <CardClick
-                                name={cardResult.name}
-                                imageUrl={cardResult.imageUrl}
-                                colors={cardResult.colors}
-                                rarity={cardResult.rarity}
-                                text={cardResult.text}
-                            /> :
-                            <div className='d-flex justify-content-center col-md-6'>
-                                <img className='w-100' src='https://flevix.com/wp-content/uploads/2019/07/Bubble-Preloader-1.gif' alt='loading' />
-                            </div>
-                    }
+                <div className='d-flex justify-content-center mt-5'>
+                    <button className='btn btn-primary'><Link to='/'>{'Back to Homepage'}</Link></button>
                 </div>
-            </div>
-            <div className='d-flex justify-content-center mt-5'>
-                <button className='btn btn-primary'><Link to='/'>{'Back to Homepage'}</Link></button>
             </div>
         </div>
     )

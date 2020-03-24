@@ -1,3 +1,12 @@
 .wrap{
     flex-wrap: wrap;
 }
+
+body{
+    background-color: $background-color;
+    color: $white-text-color;
+}
+
+.errorMessage{
+    color: red;
+}

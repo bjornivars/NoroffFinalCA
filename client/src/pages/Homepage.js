@@ -29,6 +29,7 @@ export default function HomePage() {
   //console.log("All Cards: ", allCards);
   return (
     <div className='Component'>
+    <div className="container">
       <h1 className='heading'>Welcome to Magic The Gathering Cards Collection!</h1>
       <form className='col-md-6 m-auto'>
         <p className='mt-5'>Search for a Card</p>
@@ -74,6 +75,7 @@ export default function HomePage() {
               }
             </>
         }
+      </div>
       </div>
     </div>
   );
