@@ -10,6 +10,8 @@ import * as serviceWorker from './serviceWorker';
 
 import HomePage from './pages/Homepage';
 import CardSpecific from './pages/CardSpecific';
+import Contact from './pages/Contact';
+import About from './pages/About';
 
 
 
@@ -19,9 +21,8 @@ ReactDOM.render(
           <Switch>
               <Route path='/' exact component={HomePage} />
               <Route path='/card-specific/:id/' exact component={CardSpecific} />
-              {/* <Route path='/contact/' exact component={Contact} />
+              <Route path='/contact/' exact component={Contact} />
               <Route path='/about/' exact component={About} />
- */}
           </Switch>
       </App>
   </Router>,
