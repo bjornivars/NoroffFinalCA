@@ -47,9 +47,11 @@ export default function HomePage() {
             <> {
               (allCards !== undefined) ?
                 allCards.map((value, index) => {
+                  let img;
+                  value.hasOwnProperty('imageUrl') ? img = value.imageUrl : img = 'https://via.placeholder.com/150' 
                   return <Cards key={index}
                     name={value.name}
-                    imageUrl={value.imageUrl}
+                    imageUrl={img}
                     species={value.species}
                     gender={value.gender}
                     id={value.id}
@@ -63,9 +65,11 @@ export default function HomePage() {
               {
                 (returnedFilteredCards !== undefined) ?
                   returnedFilteredCards.map((value, index) => {
+                    let img;
+                    value.hasOwnProperty('imageUrl') ? img = value.imageUrl : img = 'https://flevix.com/wp-content/uploads/2019/07/Bubble-Preloader-1.gif'
                     return <Cards key={index}
                       name={value.name}
-                      imageUrl={value.imageUrl}
+                      imageUrl={img}
                       id={value.id}
                     />
                   }) :

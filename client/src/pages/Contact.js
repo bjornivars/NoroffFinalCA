@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 
 export default function Contact() {
-    const [[name], setName] = useState('');
     const [firstname, setFirstname] = useState('');
     const [lastname, setLastname] = useState('');
     const [email, setEmail] = useState('');
@@ -21,7 +20,9 @@ export default function Contact() {
     let handleChange = (input) => {
         let name = input.target.name;
         let value = input.target.value;
+        // eslint-disable-next-line
         let emailPattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        // eslint-disable-next-line
         let telephonePattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{2,4}$/;
 
         switch (name) {
@@ -48,7 +49,6 @@ export default function Contact() {
             default:
                 break;
         }
-        setName(value);
     }
 
     let handleSubmit = (event) => {
