@@ -17,12 +17,14 @@ export default function Login(props) {
         }));
     }
 
+
     function handleSubmit(event) {
         event.preventDefault();
-
+        console.log('submit clicked');
         localStorage.setItem("username", username);
         localStorage.setItem("password", password);
         getLocalStorageInfo();
+
     }
 
     function getLocalStorageInfo() {
@@ -31,7 +33,8 @@ export default function Login(props) {
         } else if (localStorage.getItem('password') !== 'cameron23') {
             setErrorMessage('Password is incorrect')
         } else {
-            props.updateLoginStatus()
+            console.log('updateLoginStatus updated');
+            props.updateLoginStatus();
         }
     }
 

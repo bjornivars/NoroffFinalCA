@@ -8,18 +8,20 @@ import Login from './pages/Login';
 
 
 export default function App(props) {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
 function updateLogin(){
-      setIsLoggedIn(true);
+  setIsLoggedIn(true);
+      console.log('isLoggedIn should be true = ', isLoggedIn)
   }
 
 function logoutUser(){
-      setIsLoggedIn(false);
+  setIsLoggedIn(false);
     localStorage.clear();
+    console.log('isLoggedIn should be false = ', isLoggedIn)
   }
 
-    return (localStorage.getItem('username') !== null && isLoggedIn)?
+    return (localStorage.getItem('username') !== null && isLoggedIn === true) ?
     ( 
       <div className='App'>
         <Navbar />   
