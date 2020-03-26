@@ -1,4 +1,69 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+const Navbar = () => {
+
+
+  const [showMore, setShowMore] = useState(false);
+
+  const handleClick = () => {
+      setShowMore(true);
+  }
+  const handleSecondClick = () => {
+      setShowMore(false);
+  }
+
+  return (
+    <div>
+      <nav className='navbar navbar-light fixed-top'>
+        <button className='navbar-button' type='button' onClick={(showMore !== true) ? handleClick : handleSecondClick}>
+          <span className='navbar-toggler-icon'></span>
+        </button>
+        <br/>
+        <div className={(showMore !== true) ? 'd-none' : 'd-block row col-md-12 text-center'}>
+          <ul className='navbar-nav'>
+            <li className='nav-item'>
+              <Link className='nav-a' to='/'>{'Homepage'}</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-a' to='/contact/'>{'Contact'}</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-a' to='/about/'>{'About'}</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  )
+}
+
+export default Navbar;  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -27,4 +92,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar; 
+export default Navbar;  */

@@ -17,11 +17,11 @@ function updateLogin(){
 
 function logoutUser(){
   setIsLoggedIn(false);
-    localStorage.clear();
+    sessionStorage.clear();
     console.log('isLoggedIn should be false = ', isLoggedIn)
   }
 
-    return (localStorage.getItem('username') !== null && isLoggedIn === true) ?
+    return (sessionStorage.getItem('username') !== null && isLoggedIn === true) ?
     ( 
       <div className='App'>
         <Navbar />   

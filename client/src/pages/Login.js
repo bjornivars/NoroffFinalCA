@@ -21,16 +21,16 @@ export default function Login(props) {
     function handleSubmit(event) {
         event.preventDefault();
         console.log('submit clicked');
-        localStorage.setItem("username", username);
-        localStorage.setItem("password", password);
+        sessionStorage.setItem("username", username);
+        sessionStorage.setItem("password", password);
         getLocalStorageInfo();
 
     }
 
     function getLocalStorageInfo() {
-        if (localStorage.getItem('username') !== 'cameron') {
+        if (sessionStorage.getItem('username') !== 'cameron') {
             setErrorMessage('Username is incorrect')
-        } else if (localStorage.getItem('password') !== 'cameron23') {
+        } else if (sessionStorage.getItem('password') !== 'cameron23') {
             setErrorMessage('Password is incorrect')
         } else {
             console.log('updateLoginStatus updated');

@@ -14,7 +14,7 @@ export default function HomePage() {
     useEffect(() => {
         axios.get(HEROKU_BYPASS_CORS + MTH_CARDS_API)
         .then((result) => {
-            setAllCards(result.data.cards)
+            setAllCards(result.data.cards);
         })
     }, [])
 
