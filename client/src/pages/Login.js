@@ -17,23 +17,21 @@ export default function Login(props) {
         }));
     }
 
-
     function handleSubmit(event) {
         event.preventDefault();
-        console.log('submit clicked');
-        sessionStorage.setItem("username", username);
-        sessionStorage.setItem("password", password);
+        //console.log('submit clicked');
+        localStorage.setItem("username", username);
+        localStorage.setItem("password", password);
         getLocalStorageInfo();
-
     }
 
     function getLocalStorageInfo() {
-        if (sessionStorage.getItem('username') !== 'cameron') {
+        if (localStorage.getItem('username') !== 'cameron') {
             setErrorMessage('Username is incorrect')
-        } else if (sessionStorage.getItem('password') !== 'cameron23') {
+        } else if (localStorage.getItem('password') !== 'cameron23') {
             setErrorMessage('Password is incorrect')
         } else {
-            console.log('updateLoginStatus updated');
+            //console.log('updateLoginStatus updated');
             props.updateLoginStatus();
         }
     }

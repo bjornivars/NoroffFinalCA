@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const CardClick = (props) => {
     const { name, colors, rarity, imageUrl, text } = props;
     return (

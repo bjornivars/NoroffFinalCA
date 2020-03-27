@@ -4,11 +4,11 @@
 
 body{
     background-color: $background-color;
-    color: $white-text-color;
+    color: $white;
 }
 
 .errorMessage{
-    color: red;
+    color: $red;
 }
 
 .heading{
@@ -18,9 +18,7 @@ body{
 
 
 @media screen and (max-width: 900px) {
-
     h5{
         font-size: 1em;
     }
-
 }

@@ -1,9 +1,10 @@
 .card{
-    background-color: white;
-    color: $black-text-color;
+    background-color: $white;
+    color: $black;
 }
 .card-img-top{
     height: 20em;
+
     &-specific{
     height: 25em;
     }

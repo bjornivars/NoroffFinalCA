@@ -5,7 +5,7 @@ import axios from 'axios';
 import {
     MTH_CARDS_API,
     HEROKU_BYPASS_CORS
-} from './../components/constants/constants';
+} from './../constants/constants';
 import { Link } from 'react-router-dom';
 import CardClick from '../components/card-specific';
 
@@ -19,11 +19,8 @@ export default function CardSpecific() {
                 setCardResult(result.data.card);
             })
     }, [id])
-    console.log(cardResult);
 
-    /* let img;
-    cardResult.hasOwnProperty('imageUrl') ? img = cardResult.imageUrl : img = 'https://via.placeholder.com/150'
-     */return (
+    return (
         <div>
             <div className="container mb-5">
                 <div className='row'>
@@ -32,7 +29,6 @@ export default function CardSpecific() {
                     </div>
                     <div className='col-md-12'>
                         {
-
                             (cardResult !== undefined) ?
                                 <CardClick
                                     name={cardResult.name}

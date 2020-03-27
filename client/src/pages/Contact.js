@@ -64,7 +64,7 @@ export default function Contact() {
             setcorrectlySent('Well done! Your message has been sent (but only to Session Storage)')
         } else {
             setcorrectlySent('Something went wront.. Try again later')
-        }   
+        }
     }
 
     return (

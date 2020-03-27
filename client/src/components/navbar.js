@@ -6,12 +6,11 @@ const Navbar = () => {
   const [showMore, setShowMore] = useState(false);
 
   const handleClick = () => {
-      setShowMore(true);
+    setShowMore(true);
   }
   const handleSecondClick = () => {
-      setShowMore(false);
-  } 
-
+    setShowMore(false);
+  }
 
   return (
     <div>
@@ -19,7 +18,7 @@ const Navbar = () => {
         <button className='navbar-button' type='button' onClick={(showMore !== true) ? handleClick : handleSecondClick}>
           <span className='navbar-toggler-icon'></span>
         </button>
-        <br/>
+        <br />
         <div className={(showMore !== true) ? 'd-none' : 'd-block row col-md-12 text-center'}>
           <ul className='navbar-nav'>
             <li className='nav-item'>
@@ -40,7 +39,7 @@ const Navbar = () => {
   )
 }
 
-export default Navbar;  
+export default Navbar;
 
 
 
