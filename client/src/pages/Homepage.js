@@ -31,7 +31,7 @@ export default function HomePage() {
   //console.log("All Cards: ", allCards);
   return (
     <div className='Component'>
-    <div className="container">
+    <div className="container mb-5">
       <h1 className='heading'>Welcome to Magic The Gathering Cards Collection, {user}! </h1>
       <form className='col-md-6 m-auto'>
         <p className='mt-5'>Search for a Card</p>
@@ -60,7 +60,7 @@ export default function HomePage() {
                   />
                 }) :
                 <div className='d-flex justify-content-center col-md-3'>
-                  <img src='https://flevix.com/wp-content/uploads/2019/07/Bubble-Preloader-1.gif' alt='loading' />
+                  <img src='https://flevix.com/wp-content/uploads/2019/07/Bubble-Preloader-1.gif' className='col-8 col-md-12' alt='loading' />
                 </div>
             }
             </> : <>
@@ -68,7 +68,7 @@ export default function HomePage() {
                 (returnedFilteredCards !== undefined) ?
                   returnedFilteredCards.map((value, index) => {
                     let img;
-                    value.hasOwnProperty('imageUrl') ? img = value.imageUrl : img = 'https://flevix.com/wp-content/uploads/2019/07/Bubble-Preloader-1.gif'
+                  value.hasOwnProperty('imageUrl') ? img = value.imageUrl : img = 'https://via.placeholder.com/150'
                     return <Cards key={index}
                       name={value.name}
                       imageUrl={img}
@@ -76,7 +76,7 @@ export default function HomePage() {
                     />
                   }) :
                   <div className='d-flex justify-content-center col-md-3'>
-                    <img src='https://flevix.com/wp-content/uploads/2019/07/Bubble-Preloader-1.gif' alt='loading' />
+                    <img src='https://flevix.com/wp-content/uploads/2019/07/Bubble-Preloader-1.gif' className='col-8 col-md-12' alt='loading' />
                   </div>
               }
             </>

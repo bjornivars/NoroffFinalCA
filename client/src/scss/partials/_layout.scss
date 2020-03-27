@@ -11,9 +11,16 @@ body{
     color: red;
 }
 
-
-
 .heading{
     margin-top: 3em;
     text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    h5{
+        font-size: 1em;
+    }
+
 }

@@ -11,7 +11,7 @@ export default function About() {
     }
 
     return (
-        <div className='mt-5'>
+        <div className='mt-5 mb-5'>
             <div className='col-md-5 m-auto '>
                 <h1 className='heading'>About us</h1>
             </div>

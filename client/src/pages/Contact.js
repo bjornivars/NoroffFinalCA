@@ -68,8 +68,8 @@ export default function Contact() {
     }
 
     return (
-        <div className='row'>
-            <div className='col-md-5 m-auto '>
+        <div className='row mb-5'>
+            <div className='col-10 col-md-5 m-auto  '>
                 <h1 className='heading'>Please contact us, {user}</h1>
                 <form className='mt-5' onSubmit={handleSubmit}>
                     <h2 className='mb-4'>Contact form</h2>

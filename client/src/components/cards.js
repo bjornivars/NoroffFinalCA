@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Cards = ({ imageUrl, name, id }) => {
     //console.log('test navbar');
     return (
-        <div className='col-md-3 mt-4 mb-4 rmCard'>
+        <div className='col-6 col-md-3 mt-4 mb-4 rmCard'>
             <div className='card'>
                 <img className='card-img-top' src={imageUrl} alt='Card cap' />
                 <div className='card-body p-3'>

@@ -21,15 +21,18 @@ export default function CardSpecific() {
     }, [id])
     console.log(cardResult);
 
-    return (
+    /* let img;
+    cardResult.hasOwnProperty('imageUrl') ? img = cardResult.imageUrl : img = 'https://via.placeholder.com/150'
+     */return (
         <div>
-            <div className="container">
+            <div className="container mb-5">
                 <div className='row'>
                     <div className='col-md-12'>
                         <h1 className='heading'>Your selected MTG Card!</h1>
                     </div>
                     <div className='col-md-12'>
                         {
+
                             (cardResult !== undefined) ?
                                 <CardClick
                                     name={cardResult.name}
