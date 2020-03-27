@@ -24,9 +24,10 @@ function logoutUser(){
     return (sessionStorage.getItem('username') !== null && isLoggedIn === true) ?
     ( 
       <div className='App'>
-        <Navbar />   
+        <Navbar />  
         <button className='btn btn-primary fixed-top btn-logout' onClick={logoutUser}>
-        <Link to={'/'}>Log out</Link> 
+       
+        <Link to={'/'} className='btn-primary-a'>Log out</Link> 
         </button>
           {props.children}
          {/*  <Footer /> */}

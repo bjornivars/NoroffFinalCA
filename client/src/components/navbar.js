@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
-
   const [showMore, setShowMore] = useState(false);
 
   const handleClick = () => {
@@ -11,7 +10,8 @@ const Navbar = () => {
   }
   const handleSecondClick = () => {
       setShowMore(false);
-  }
+  } 
+
 
   return (
     <div>
@@ -23,14 +23,16 @@ const Navbar = () => {
         <div className={(showMore !== true) ? 'd-none' : 'd-block row col-md-12 text-center'}>
           <ul className='navbar-nav'>
             <li className='nav-item'>
-              <Link className='nav-a' to='/'>{'Homepage'}</Link>
+              <Link className='nav-a' to='/' onClick={handleSecondClick}>{'Homepage'}</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-a' to='/contact/'>{'Contact'}</Link>
+              <Link className='nav-a' to='/contact/' onClick={handleSecondClick}>{'Contact'}</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-a' to='/about/'>{'About'}</Link>
+              <Link className='nav-a' to='/about/' onClick={handleSecondClick}>{'About'}</Link>
             </li>
+            <br />
+            <span className='navbar-nav-close' onClick={handleSecondClick}>X</span>
           </ul>
         </div>
       </nav>

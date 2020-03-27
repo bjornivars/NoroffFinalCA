@@ -10,7 +10,7 @@ const Cards = ({ imageUrl, name, id }) => {
                 <div className='card-body p-3'>
                     <h5 className='card-title'>{name}</h5>
                     <div className='d-flex justify-content-between'>
-                        <Link className='btn btn-primary' to={`/card-specific/${id}`}>Read More</Link>
+                        <Link className='btn btn-primary btn-primary-a' to={`/card-specific/${id}`}>Read More</Link>
                     </div>
                 </div>
             </div>

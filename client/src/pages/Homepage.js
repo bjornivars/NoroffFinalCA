@@ -11,6 +11,8 @@ export default function HomePage() {
     const [isCardsFiltered, setIsCardsFiltered] = useState(false);
     const [returnedFilteredCards, setReturnedFilteredCards] = useState([]);
 
+    const user = sessionStorage.getItem('username');
+
     useEffect(() => {
         axios.get(HEROKU_BYPASS_CORS + MTH_CARDS_API)
         .then((result) => {
@@ -30,7 +32,7 @@ export default function HomePage() {
   return (
     <div className='Component'>
     <div className="container">
-      <h1 className='heading'>Welcome to Magic The Gathering Cards Collection!</h1>
+      <h1 className='heading'>Welcome to Magic The Gathering Cards Collection, {user}! </h1>
       <form className='col-md-6 m-auto'>
         <p className='mt-5'>Search for a Card</p>
         <input type='text'

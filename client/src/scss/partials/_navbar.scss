@@ -11,15 +11,41 @@
         z-index: 999;
         background-color: orange;
         margin-left: 90%;
+        border-radius: .25rem;
+        border-color: orange;
+        padding: .375rem .75rem;
+    }
+    &-nav{
+        padding-top: 4em;
+        padding-bottom: 100vh;
+        &-close{
+            font-size: 3em;
+            border: 2px solid white;
+            width: 10%;
+            margin: auto;
+            border-radius: 1em;
+            &:hover{
+                cursor: pointer;
+                background-color: orange;
+            }
+        }
+    }
+    &-toggler-icon{
+
     }
 }
 .nav{
     &-item{
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
     }
     &-a{
         color: white;
+        font-size: 3em;
+        &:hover{
+            color: orange;
+            text-decoration: underline;
+        }
     }
 } 
 
@@ -34,4 +60,12 @@
             color: white;
         }
     } 
+    .navbar{
+        &-button{
+            margin-left: 85%;
+            border-radius: .25rem;
+            border-color: orange;
+            padding: .375rem .75rem;
+        }
+    }
 }

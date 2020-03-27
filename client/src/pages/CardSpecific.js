@@ -26,7 +26,7 @@ export default function CardSpecific() {
             <div className="container">
                 <div className='row'>
                     <div className='col-md-12'>
-                        <h1 className='heading'>Card Specific</h1>
+                        <h1 className='heading'>Your selected MTG Card!</h1>
                     </div>
                     <div className='col-md-12'>
                         {
@@ -45,7 +45,7 @@ export default function CardSpecific() {
                     </div>
                 </div>
                 <div className='d-flex justify-content-center mt-5'>
-                    <button className='btn btn-primary'><Link to='/'>{'Back to Homepage'}</Link></button>
+                    <button className='btn btn-primary'><Link to='/' className='btn-primary-a'>{'Back to Homepage'}</Link></button>
                 </div>
             </div>
         </div>

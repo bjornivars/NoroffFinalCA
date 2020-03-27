@@ -16,6 +16,8 @@ export default function Contact() {
 
     const [correctlySent, setcorrectlySent] = useState(undefined);
 
+    const user = sessionStorage.getItem('username');
+
 
     let handleChange = (input) => {
         let name = input.target.name;
@@ -66,9 +68,9 @@ export default function Contact() {
     }
 
     return (
-        <div className='row mt-5'>
+        <div className='row'>
             <div className='col-md-5 m-auto '>
-                <h1 className='heading'>Please contact us</h1>
+                <h1 className='heading'>Please contact us, {user}</h1>
                 <form className='mt-5' onSubmit={handleSubmit}>
                     <h2 className='mb-4'>Contact form</h2>
                     <p>Firstname</p>
