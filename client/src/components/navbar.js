@@ -14,24 +14,24 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className='navbar navbar-light fixed-top'>
-        <button className='navbar-button' type='button' onClick={(showMore !== true) ? handleClick : handleSecondClick}>
-          <span className='navbar-toggler-icon'></span>
+      <nav className=' [ navbar navbar-light fixed-top ] '>
+        <button className=' [ navbar-button ] ' type='button' onClick={(showMore !== true) ? handleClick : handleSecondClick}>
+          <span className=' [ navbar-toggler-icon ] '></span>
         </button>
         <br />
-        <div className={(showMore !== true) ? 'd-none' : 'd-block row col-md-12 text-center'}>
-          <ul className='navbar-nav'>
-            <li className='nav-item'>
-              <Link className='nav-a' to='/' onClick={handleSecondClick}>{'Homepage'}</Link>
+        <div className={(showMore !== true) ? ' [ d-none ] ' : ' [ d-block row col-md-12 text-center ] '}>
+          <ul className=' [ navbar-nav ] '>
+            <li className=' [ nav-item ] '>
+              <Link className=' [ nav-a ] ' to='/' onClick={handleSecondClick}>{'Homepage'}</Link>
             </li>
-            <li className='nav-item'>
-              <Link className='nav-a' to='/contact/' onClick={handleSecondClick}>{'Contact'}</Link>
+            <li className=' [ nav-item ] '>
+              <Link className=' [ nav-a ] ' to='/contact/' onClick={handleSecondClick}>{'Contact'}</Link>
             </li>
-            <li className='nav-item'>
+            <li className=' [ nav-item ] '>
               <Link className='nav-a' to='/about/' onClick={handleSecondClick}>{'About'}</Link>
             </li>
             <br />
-            <span className='navbar-nav-close' onClick={handleSecondClick}>X</span>
+            <span className=' [ navbar-nav-close ] ' onClick={handleSecondClick}>X</span>
           </ul>
         </div>
       </nav>

@@ -11,16 +11,16 @@ export default function About() {
     }
 
     return (
-        <div className='mt-5 mb-5'>
-            <div className='col-md-5 m-auto '>
-                <h1 className='heading'>About us</h1>
+        <div className=' [ mt-5 mb-5 ] '>
+            <div className=' [ col-md-5 m-auto ] '>
+                <h1 className=' [ heading ] '>About us</h1>
             </div>
             <div>
-                <div className='d-flex justify-content-center mb-5 mt-3'>
-                    <button className='accordionP text-center btn btn-primary m-auto' onClick={(showMore !== true) ? handleClick : handleSecondClick}
+                <div className=' [ d-flex justify-content-center mb-5 mt-3 ] '>
+                    <button className=' [ accordionP text-center btn btn-primary m-auto ] ' onClick={(showMore !== true) ? handleClick : handleSecondClick}
                     >Read more about us!</button>
                 </div>
-                <div className={(showMore !== true) ? 'd-none' : 'd-block unstyledUl col-md-6 m-auto'}>
+                <div className={(showMore !== true) ? ' [ d-none ] ' : ' [ d-block unstyledUl col-md-6 m-auto ] '}>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a feugiat mi.
                         Duis sodales metus pulvinar eros scelerisque, id cursus lacus lacinia. Quisque commodo

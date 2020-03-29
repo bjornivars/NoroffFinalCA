@@ -68,56 +68,56 @@ export default function Contact() {
     }
 
     return (
-        <div className='row mb-5'>
-            <div className='col-10 col-md-5 m-auto  '>
-                <h1 className='heading'>Please contact us, {user}</h1>
-                <form className='mt-5' onSubmit={handleSubmit}>
-                    <h2 className='mb-4'>Contact form</h2>
+        <div className=' [ row mb-5 ] '>
+            <div className=' [ col-10 col-md-5 m-auto ] '>
+                <h1 className=' [ heading ] '>Please contact us, {user}</h1>
+                <form className=' [ mt-5 ] ' onSubmit={handleSubmit}>
+                    <h2 className=' [ mb-4 ] '>Contact form</h2>
                     <p>Firstname</p>
                     <input type='text'
                         name='firstname'
-                        className='form-control'
+                        className=' [ form-control ] '
                         onChange={handleChange}
                     />
-                    <p className={(firstnameError) ? 'errorMessage' : 'd-none'}>Please enter firstname</p>
+                    <p className={(firstnameError) ? ' [ errorMessage ] ' : ' [ d-none ] '}>Please enter firstname</p>
                     <br />
                     <p>Lastname</p>
                     <input type='text'
                         name='lastname'
-                        className='form-control'
+                        className=' [ form-control ] '
                         onChange={handleChange}
                     />
-                    <p className={(lastnameError) ? 'errorMessage' : 'd-none'}>Please enter lastname</p>
+                    <p className={(lastnameError) ? ' [ errorMessage ] ' : ' [ d-none ] '}>Please enter lastname</p>
 
                     <br />
                     <p>Email</p>
                     <input type='text'
                         name='email'
-                        className='form-control'
+                        className=' [ form-control ] '
                         onChange={handleChange}
                     />
-                    <p className={(emailError) ? 'errorMessage' : 'd-none'}>Please enter a valid email</p>
+                    <p className={(emailError) ? ' [ errorMessage ] ' : ' [ d-none ] '}>Please enter a valid email</p>
 
                     <br />
                     <p>Telephone</p>
                     <input type='number'
                         name='telephone'
-                        className='form-control'
+                        className=' [ form-control ] '
                         onChange={handleChange}
                     />
-                    <p className={(telephoneError) ? 'errorMessage' : 'd-none'}>Please enter a valid email</p>
+                    <p className={(telephoneError) ? ' [ errorMessage ] ' : ' [ d-none ] '}>Please enter a valid email</p>
 
                     <br />
                     <p>Message</p>
                     <input type='text'
                         name='message'
-                        className='form-control'
+                        className=' [ form-control ] '
                         onChange={handleChange}
                     />
-                    <p className={(messageError) ? 'errorMessage' : 'd-none'}>Please enter a message</p>
+                    <p className={(messageError) ? ' [ errorMessage ] ' : ' [ d-none ] '}>Please enter a message</p>
                     <br />
                     <p>{correctlySent}</p>
-                    <input type='submit' disabled={firstnameError || lastnameError || emailError || messageError || telephoneError || correctlySent} className='btn btn-primary' />
+                    <input type='submit' disabled={firstnameError || lastnameError || emailError || messageError || telephoneError || correctlySent} className=' [ btn btn-primary ] ' />
                 </form>
             </div>
         </div>

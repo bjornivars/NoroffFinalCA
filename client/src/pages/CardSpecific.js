@@ -22,12 +22,12 @@ export default function CardSpecific() {
 
     return (
         <div>
-            <div className="container mb-5">
-                <div className='row'>
-                    <div className='col-md-12'>
-                        <h1 className='heading'>Your selected MTG Card!</h1>
+            <div className=" [ container mb-5 ] ">
+                <div className=' [ row ] '>
+                    <div className=' [ col-md-12 ] '>
+                        <h1 className=' [ heading ] '>Your selected MTG Card!</h1>
                     </div>
-                    <div className='col-md-12'>
+                    <div className=' [ col-md-12 ] '>
                         {
                             (cardResult !== undefined) ?
                                 <CardClick
@@ -37,14 +37,14 @@ export default function CardSpecific() {
                                     rarity={cardResult.rarity}
                                     text={cardResult.text}
                                 /> :
-                                <div className='d-flex justify-content-center col-md-6'>
-                                    <img className='w-100' src='https://flevix.com/wp-content/uploads/2019/07/Bubble-Preloader-1.gif' alt='loading' />
+                                <div className=' [ d-flex justify-content-center col-md-6 ] '>
+                                    <img className=' [ w-100 ] ' src='https://flevix.com/wp-content/uploads/2019/07/Bubble-Preloader-1.gif' alt='loading' />
                                 </div>
                         }
                     </div>
                 </div>
-                <div className='d-flex justify-content-center mt-5'>
-                    <button className='btn btn-primary'><Link to='/' className='btn-primary-a'>{'Back to Homepage'}</Link></button>
+                <div className=' [ d-flex justify-content-center mt-5 ] '>
+                    <button className=' [ btn btn-primary ] '><Link to='/' className=' [ btn-primary-a ] '>{'Back to Homepage'}</Link></button>
                 </div>
             </div>
         </div>
