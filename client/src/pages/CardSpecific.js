@@ -22,7 +22,7 @@ export default function CardSpecific() {
 
     return (
         <div>
-            <div className=" [ container mb-5 ] ">
+            <div className=' [ container mb-5 ] '>
                 <div className=' [ row ] '>
                     <div className=' [ col-md-12 ] '>
                         <h1 className=' [ heading ] '>Your selected MTG Card!</h1>
